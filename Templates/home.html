@@ -22,7 +22,7 @@
 
       /* Navigation Bar */
       nav {
-        background-color: #2e7d32; /* Dark green */
+        background-color: #1b5e20; /* Dark green */
         color: white;
         padding: 10px 0;
         position: sticky;
@@ -38,9 +38,25 @@
       }
 
       .logo {
-        font-size: 24px;
-        font-weight: bold;
-      }
+  background-image: url('photo_2024-09-01_02-36-40.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-right: 20px;
+   /* Space between logo and logo-info */
+}
+
+/* .logo-info {
+  display: flex;
+  flex-direction: column;
+  left:20px;
+} */
+
 
       .nav-links {
         list-style: none;
@@ -57,7 +73,19 @@
       }
 
       .nav-links a:hover {
-        background-color: #1b5e20; /* Darker green on hover */
+        background-color: #2e7d32;
+      }
+
+      .profile {
+        background-image: url('farmer.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
       }
 
       /* Hero Section */
@@ -77,18 +105,23 @@
 
       .hero h1 {
         font-size: 48px;
-        text-shadow: 3px 3px rgb(177, 103, 202);
-        margin-bottom: 20px;
+        text-shadow: 3px 3px rgb(127, 214, 227);
+        margin-bottom: 20px; 
+        color:  #4709fd;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: #0c0b0b 0px 3px 3px;
       }
 
-      .hero p {
-        font-size: 18px;
+      .hero h4 {
+        font-size: 40px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         margin-bottom: 40px;
+        color: #4709fd;
+        text-shadow: #0c0b0b 0px 3px 3px;
       }
 
       .cta-button {
-        background-color: #388e3c; /* Medium green */
+        background-color: #008006;
         color: white;
         padding: 12px 24px;
         text-decoration: none;
@@ -97,17 +130,62 @@
       }
 
       .cta-button:hover {
-        background-color: #2e7d32; /* Darker green on hover */
+        background-color: #2e7d32;
       }
 
       /* About Section */
+      
       .about {
         padding: 60px 0;
         background-color: white;
         color: #333;
         text-align: center;
+        overflow: hidden;
+        margin: 0;
       }
+      
+    .leaf {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: url('photo_2024-09-01_03-44-03.jpg') no-repeat center/contain;
+      animation: slideIn 4s ease-out forwards;
+    }
+    @keyframes slideIn {
+     from{
+      margin-top: 70px;
+      left:30px;
+      transform: scale(1);
+     }
+     to{
+      margin-top: 150px;
+      left:50px;
+      transform: scale(3);
+     }
+    }
 
+    .leaf1 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: url('photo_2024-09-01_03-43-53.jpg') no-repeat center/contain;
+      animation: slideIn 4s ease-out forwards;
+    }
+    @keyframes slideIn {
+     from{
+      margin-top: 70px;
+      left:30px;
+      transform: scale(1);
+     }
+     to{
+      margin-top: 150px;
+      left:50px;
+      transform: scale(3);
+     }
+    }
+
+
+   
       .about h2 {
         font-size: 36px;
         margin-bottom: 20px;
@@ -122,7 +200,7 @@
       /* Services Section */
       .services {
         padding: 60px 0;
-        background-color: #e8f5e9; /* Light green */
+        background-color: #e8f5e9;
         color: #333;
         text-align: center;
       }
@@ -158,6 +236,20 @@
         font-size: 16px;
       }
 
+      .service-item a {
+        color: #008080;
+        text-decoration: none;
+      }
+
+      .service-item a:visited {
+        color: rgb(11, 140, 231);
+      }
+
+      .service-item a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+
       /* Contact Section */
       .contact {
         padding: 60px 0;
@@ -183,7 +275,7 @@
 
       /* Footer */
       footer {
-        background-color: #2e7d32; /* Dark green */
+        background-color: #2e7d32;
         color: white;
         padding: 20px 0;
         text-align: center;
@@ -192,22 +284,10 @@
       footer p {
         margin: 0;
       }
-    .service-items a {
-    color: #008080;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:visited {
-    color: rgb(11, 140, 231);
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-  }
- 
+      .hero-content h4
+      {
+          text-shadow: 0px 3px 4px 4px rgb(12, 11, 11) ;
+      }
     </style>
   </head>
   <body>
@@ -215,78 +295,87 @@
     <nav>
       <div class="container">
         <div class="logo">
-            <!-- <img src="logo.png" width="200px" height="100px"> -->
-             FARMSEVA
-            </div>
+          <button src="farmer.jpg"> </button>
+        </div>
+        <div class="logo-info">
+          FARM SEVA
+          <div class="subtext">Diagnose.Protect.Prosper</div> 
+        </div>
         <ul class="nav-links">
-          <li><a href="#home" style="color: white">Home</a></li>
-          <li><a href="#about" style="color: white">About</a></li>
-          <li><a href="#services" style="color:white">Services</a></li>
-          <li><a href="#contact" style="color:white">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="profile"></div>
       </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero" id="home">
       <div class="hero-content">
-        <h1>Welcome to FARMSEVA</h1>
-        <p>Transforming Agriculture,Empowering Farmers</p>
-        <a href="#services" class="cta-button" style="color:white">Learn More</a>
+        <h4 >Transforming Agriculture, Empowering Farmers</h4>
+        <h1>FARM SEVA</h1>
+        <a href="#" class="cta-button">Sign Up</a>
       </div>
     </header>
+   <!-- About Section -->
 
-    <!-- About Section -->
-    <section class="about" id="about">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>
-            "Our website helps farmers and gardeners detect crop diseases quickly and easily. Just upload a picture of your plant's leaf, and our system will identify any diseases. You can also chat with our bot to get advice on plant care, disease prevention, and more. We're here to support you in keeping your crops healthy and thriving."
-        </p>
-      </div>
-    </section>
+   <section class="about" id="about">
+    <div class="leaf" style="left: 10%; animation-delay: 0s;"></div>
+    
+  
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+          "Our website helps farmers and gardeners detect crop diseases quickly and easily. Just upload a picture of your plant's leaf, and our system will identify any diseases. You can also chat with our bot to get advice on plant care, disease prevention, and more. We're here to support you in keeping your crops healthy and thriving."
+      </p>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-      <div class="container">
-        <h2>Our Services</h2>
-        <div class="service-items" id="services1">
-          <div class="service-item">
-            <h3>Crop Disease Detection</h3>
-            <p>Know your crop disease</p>
-            <a href="index.html">Upload Image</a>
-          </div>
-          <div class="service-item">
-            <h3>Chat with Bot</h3>
-            <p>Discuss about the disease</p>
-            <a href="chat.html">Chat with Bot</a>
-          </div>
-          <div class="service-item">
-            <h3>Mapping(upcoming)</h3>
-            <p>Get prior notification about disease outbreak in your area</p>
-            <a href="map.html">Mapping</a>
-          </div>
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-items" id="services1">
+        <div class="service-item">
+          <h3>Crop Disease Detection</h3>
+          <p>Know your crop disease</p>
+          <a href="index.html">Upload Image</a>
+        </div>
+        <div class="service-item">
+          <h3>Chat with Bot</h3>
+          <p>Discuss about the disease</p>
+          <a href="chat.html">Chat with Bot</a>
+        </div>
+        <div class="service-item">
+          <h3>Mapping(upcoming)</h3>
+          <p>Get prior notification about disease outbreak in your area</p>
+          <a href="map.html">Mapping</a>
+          <div class="leaf1" style="left: 10%; animation-delay: 0s;"></div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us through the following methods.</p>
-        <ul class="contact-info">
-          <li>Email: info@mywebsite.com</li>
-          <li>Phone: +123 456 7890</li>
-        </ul>
-      </div>
-    </section>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Get in touch with us through the following methods.</p>
+      <ul class="contact-info">
+        <li>Email: info@mywebsite.com</li>
+        <li>Phone: +123 456 7890</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-      </div>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 My Website. All rights reserved.</p>
+    </div>
+  </footer>
   </body>
-</html>
+  </html>
